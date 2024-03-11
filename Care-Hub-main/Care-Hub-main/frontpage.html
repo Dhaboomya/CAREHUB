@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>home page</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="frontpage.css">
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navbar-left">
+			<a href="frontpage.html" class="logo"><img src="images/logo.png"></a>
+			<div class="search-box">
+				<img src="images/searchlogo.png">
+				<input type="text" placeholder="search">
+			</div>
+		</div>
+		<div class="navbar-center">
+			<ul >
+				<li><a href="#" class="active-link"><img src="images/homelogo.png" > <span>Home</span></a></li>
+				<li><a href="#"><img src="images/mynetworklogo.jpeg" > <span>My Network</span></a></li>
+				<li><a href="#"><img src="images/messagelogo.png"> <span>Messaging</span></a></li>
+				<li><a href="#"><img src="images/notificationlogo.png"> <span>Notifications</span></a></li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+			<div class="online">
+			<img src="images/photo.jpeg" class="nav-profile-img" onclick="toggleMenu()">
+			</div>
+		</div>
+<!------------------profile-drop-down-menu-------------- -->
+<div class="profile-menu-wrap" id="profileMenu">
+	<div class="profile-menu">
+		<div class="user-info">
+			<img src="images/img2.jpeg">
+				<div>
+					<h3>Raya Walton</h3>
+						<a href="profile.html">See your profile</a>
+						</div>
+					</div>
+						<hr>
+						<a href="#" class="profile-menu-link">
+							<img src="images/feedback.logo.png">
+							<p>Give Feedback</p>
+							<span>></span>
+						</a>
+						<a href="#" class="profile-menu-link">
+							<img src="images/setting.png">
+						<p>Settings & privacy</p>
+						<span>></span>
+					</a>
+					<a href="#" class="profile-menu-link">
+						<img src="images/help.png">
+						<p>Help & Support</p>
+						<span>></span>
+					</a>
+					<a href="#" class="profile-menu-link">
+						<img src="images/display.png">
+						<p>Display & Accessibility</p>
+						<span>></span>
+					</a>
+					<a href="#" class="profile-menu-link">
+						<img src="images/logout.png">
+						<p>Logout</p>
+						<span>></span>
+					</a>
+				</div>
+			</div>
+	</nav>
+	<!-- -----------navbar close-------------- -->
+	<div class="container">
+		<!-- -----------left-sidebar-------------- -->
+		<div class="left-sidebar">
+			<div class="sidebar-profile-box">
+				<img src="images/img2.jpeg" width="100%">
+				<div class="sidebar-profile-info">
+					<img src="images/photo.jpeg">
+					<h1>Raya</h1>
+					<h3>social worker</h3>
+					<ul>
+						<li>Your profile views<span>52</span></li>
+						<li>Your post views<span>810</span></li>
+						<li>Your connections<span>205</span></li>
+					</ul>
+				</div>
+				<div class="sidebar-profile-link">
+					<a href="#"><img src="images/items.png"> My items</a>
+				</div>
+			</div>
+			<div class="sidebar-activity"id="sidebarActivity">
+				<h3>RECENT</h3>
+				<a href="#"><img src="images/recent.png"> Books donate</a>
+				<a href="#"><img src="images/recent.png"> food donate </a>
+				<a href="#"><img src="images/recent.png"> blood donate </a>
+				<a href="#"><img src="images/recent.png"> cloth donate </a>
+				<a href="#"><img src="images/recent.png"> plantting</a>
+				<a href="#"><img src="images/recent.png"> cleaning</a>
+				<h3>GROUPS</h3>
+				<a href="#"><img src="images/group.png"> Books donate</a>
+				<a href="#"><img src="images/group.png"> food donate</a>
+				<a href="#"><img src="images/group.png"> blood donate</a>
+				<a href="#"><img src="images/group.png"> cloth donate</a>
+				<a href="#"><img src="images/group.png"> plantting</a>
+				<a href="#"><img src="images/group.png"> cleaning</a>
+				<h3>HASHTAG</h3>
+				<a href="#"><img src="images/hashtag.png">  Books donate</a>
+				<a href="#"><img src="images/hashtag.png"> food donate</a>
+				<a href="#"><img src="images/hashtag.png"> blood donate</a>
+				<a href="#"><img src="images/hashtag.png"> cloth donate</a>
+				<a href="#"><img src="images/hashtag.png"> plantting</a>
+				<a href="#"><img src="images/hashtag.png"> cleaning</a>
+				<div class="discover-more-link">
+					<a href="#">Discover more</a>
+				</div>
+			</div>
+			<p id="showMoreLink" onclick="toggleActivity()">Show more<b>+</b></p>
+		</div>
+		<!-- -----------main content-------------- -->
+		<div class="main-content">
+			<div class="create-post">
+				<div class="create-post-input">
+					<img src="images/photo.jpeg">
+					<textarea rows="2" placeholder="Write a post"></textarea>
+				</div>	
+				<div class="create-post-links">
+					<li><img src="images/camera.png">Photo</li>
+					<li><img src="images/video.png">Video</li>
+					<li><img src="images/event.png">Event</li>
+					<li>Post</li>
+				</div>
+			</div>
+			<div class="sort-by">
+				<hr>
+				<p>Sort by: <span>top <img src="images/downarrow.png"></span></p>
+			</div>
+			<div class="post">
+				<div class="post-author">
+					<img src="images/img2.jpeg">
+					<div>
+						<h1>Riya</h1>
+						<small>Social Worker | service community</small>
+						<small>2 hrs ago</small>
+					</div>
+				</div>
+				<p>Social work is a practice-based profession that promotes social change, development, 
+					cohesion and the empowerment of people and communities. Social work practice involves the 
+					understanding of human development, behavior and the social, economic and cultural institutions
+					 and interactions.</p>
+					 <img src="images/post.png" width="100%">
+					 <div class="post-stats">
+						<div>
+							<img src="images/thumbsup.png">
+							<img src="images/like.jpeg">
+							<img src="images/clap.png">
+							<span class="liked-users">Abhinav mishra and 75 others</span>
+						</div>
+						<div>
+							<span>22 comments &middot; 40 shares</span>
+						</div>
+					 </div>
+					 <div class="post-activity">
+						<div>
+							<img src="images/img2.jpeg" class="post-activity-user-icon">
+							<img src="images/downarrow.png" class="post-activity-arrow-icon">
+						</div>
+						<div class="post-activity-link">
+							<img src="images/thumbsup.png">
+							<span>Like</span>
+						</div>
+						<div class="post-activity-link">
+							<img src="images/messagelogo.png">
+							<span>Comment</span>
+						</div>
+						<div class="post-activity-link">
+							<img src="images/share.png">
+							<span>Share</span>
+						</div>
+						<div class="post-activity-link">
+							<img src="images/send.png">
+							<span>Send</span>
+						</div>
+					 </div>
+			</div>
+			<div class="post">
+				<div class="post-author">
+					<img src="images/person1.jpeg">
+					<div>
+						<h1>Rakesh</h1>
+						<small>Social Worker | service community</small>
+						<small>2 hrs ago</small>
+					</div>
+				</div>
+				<p>I'm happy to share the AD groups organized a Plantation event in Chennai.Tree Planting events are a great way to promote environmental
+					conversation and create a greener,more sustainable world.It's always inspiring to see individuals and communities coming together
+					to take action towards a common goal.Thank you for creating a greener environment with me!
+				</p>
+					 <img src="images/post2.jpeg" width="100%">
+					 <div class="post-stats">
+						<div>
+							<img src="images/thumbsup.png">
+							<img src="images/like.jpeg">
+							<img src="images/clap.png">
+							<span class="liked-users">Abhinav mishra and 75 others</span>
+						</div>
+						<div>
+							<span>22 comments &middot; 40 shares</span>
+						</div>
+					 </div>
+					 <div class="post-activity">
+						<div>
+							<img src="images/img2.jpeg" class="post-activity-user-icon">
+							<img src="images/downarrow.png" class="post-activity-arrow-icon">
+						</div>
+						<div class="post-activity-link">
+							<img src="images/thumbsup.png">
+							<span>Like</span>
+						</div>
+						<div class="post-activity-link">
+							<img src="images/messagelogo.png">
+							<span>Comment</span>
+						</div>
+						<div class="post-activity-link">
+							<img src="images/share.png">
+							<span>Share</span>
+						</div>
+						<div class="post-activity-link">
+							<img src="images/send.png">
+							<span>Send</span>
+						</div>
+					 </div>
+			</div>
+			<div class="post">
+				<div class="post-author">
+					<img src="images/photo.jpeg">
+					<div>
+						<h1>Shreya</h1>
+						<small>Social Worker | service community</small>
+						<small>2 hrs ago</small>
+					</div>
+				</div>
+				<p>Child care is an essential service that provides support and assistance to families and children in need.From childcare 
+					subsidies to foster crae and adoption,social services agencies play a crucial role in ensuring that all the children have access to quality care.
+					The Child care Association is dedicated to provide high-quality care and support to children and families in our community.
+					our organzation offers a range of child care services,including full day and half day programs for infants,toddlers, and preschool-aged children
+				</p>
+					 <img src="images/post1.png" width="100%">
+					 <div class="post-stats">
+						<div>
+							<img src="images/thumbsup.png">
+							<img src="images/like.jpeg">
+							<img src="images/clap.png">
+							<span class="liked-users">Abhinav mishra and 75 others</span>
+						</div>
+						<div>
+							<span>22 comments &middot; 40 shares</span>
+						</div>
+					 </div>
+					 <div class="post-activity">
+						<div>
+							<img src="images/img2.jpeg" class="post-activity-user-icon">
+							<img src="images/downarrow.png" class="post-activity-arrow-icon">
+						</div>
+						<div class="post-activity-link">
+							<img src="images/thumbsup.png">
+							<span>Like</span>
+						</div>
+						<div class="post-activity-link">
+							<img src="images/messagelogo.png">
+							<span>Comment</span>
+						</div>
+						<div class="post-activity-link">
+							<img src="images/share.png">
+							<span>Share</span>
+						</div>
+						<div class="post-activity-link">
+							<img src="images/send.png">
+							<span>Send</span>
+						</div>
+					 </div>
+			</div>
+			<div class="post">
+				<div class="post-author">
+					<img src="images/person2.jpeg">
+					<div>
+						<h1>Kathirvel</h1>
+						<small>Social Worker | service community</small>
+						<small>2 hrs ago</small>
+					</div>
+				</div>
+				<p>Food distribution is one of the social services and during this time of pandemic we need 
+					more and more people to come out and lend their hand in this good deed. After the outbreak
+					 of Coronavirus, millions of people have lost their jobs and moreover are struggling each 
+					 day to feed their families.</p>
+					 <img src="images/post3.jpeg" width="100%">
+					 <div class="post-stats">
+						<div>
+							<img src="images/thumbsup.png">
+							<img src="images/like.jpeg">
+							<img src="images/clap.png">
+							<span class="liked-users">Abhinav mishra and 75 others</span>
+						</div>
+						<div>
+							<span>22 comments &middot; 40 shares</span>
+						</div>
+					 </div>
+					 <div class="post-activity">
+						<div>
+							<img src="images/img2.jpeg" class="post-activity-user-icon">
+							<img src="images/downarrow.png" class="post-activity-arrow-icon">
+						</div>
+						<div class="post-activity-link">
+							<img src="images/thumbsup.png">
+							<span>Like</span>
+						</div>
+						<div class="post-activity-link">
+							<img src="images/messagelogo.png">
+							<span>Comment</span>
+						</div>
+						<div class="post-activity-link">
+							<img src="images/share.png">
+							<span>Share</span>
+						</div>
+						<div class="post-activity-link">
+							<img src="images/send.png">
+							<span>Send</span>
+						</div>
+					 </div>
+			</div>
+		</div>
+		<!-- -----------right-sidebar-------------- -->
+		<div class="right-sidebar">
+			<div class="sidebar-news">
+				<img src="images/information.png" class="info-icon">
+				<h3>Trending News</h3>
+				<a href="#">book donation</a>
+				<span>1d ago &middot; 10,934 readers</span>
+
+				<a href="#">food donation</a>
+				<span>19h ago &middot; 1,934 readers</span>
+
+				<a href="#">cloth donation</a>
+				<span>1d ago &middot; 27,934 readers</span>
+
+				<a href="#">book donation</a>
+				<span>1d ago &middot; 10,934 readers</span>
+
+				<a href="#">plantting activities</a>
+				<span>18h ago &middot; 8,934 readers</span>
+
+				<a href="#">cleaning activities</a>
+				<span>12h ago &middot; 4,934 readers</span>
+
+				<a href="#" class="read-more-link">Read More</a>
+			</div>
+			<div class="sidebar-ad">
+				<small>Volnteers Required&middot;&middot;&middot;</small>
+				<p>Distribution of foods </p>
+				<div>
+					<img src="images/food.png">
+					<img src="images/hand.png">
+				</div>
+				<b>Lend a hand,you can help beat hunger!</b>
+				<a href="#" class="ad-link">Learn more</a>
+			</div>
+			<div class="sidebar-useful-links">
+				<a href="#">About</a>
+				<a href="#">Accessibility</a>
+				<a href="#">Help center</a>
+				<a href="#">Privacy policy</a>
+				<a href="#">More</a>
+
+				<div class="copyright-msg">
+					<img src="images/logo.png">
+					<p>Carehub &#169; 2022. All right reversed</p>
+				</div>
+			</div>
+		</div> 
+	</div>
+	<script>
+		let profileMenu = document.getElementById("profileMenu");
+		function toggleMenu(){
+			profileMenu.classList.toggle("open-menu");
+		}
+	</script>
+	<script>
+		let sideActivity = document.getElementById("sidebarActivity");
+		let moreLink = document.getElementById("showMoreLink");
+
+		function toggleActivity(){
+			sideActivity.classList.toggle("open-activity");
+			if(sideActivity.classList.contains("open-activity")){
+				moreLink.innerHTML="Show less <b>-</b>";
+			}
+			else {
+				moreLink.innerHTML="Show more <b>+</b>";
+			}
+		}
+	</script>
+
+</body>
+</html>

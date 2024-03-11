@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Selection</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			text-align: center;
+			padding: 50px;
+		}
+		h1 {
+			font-size: 36px;
+			margin-bottom: 30px;
+		}
+		form {
+			display: inline-block;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			padding: 30px;
+			text-align: left;
+		}
+		label {
+			display: block;
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+		select {
+			font-size: 16px;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		button {
+			background-color: #4CAF50;
+			color: #fff;
+			font-size: 18px;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1>Select Login Type</h1>
+	<form>
+		<label for="loginType">Login Type:</label>
+		<select id="loginType">
+			<option value="">Select Login Type</option>
+			<option value="serviceSeeker">Service Seeker</option>
+			<option value="customerService">Customer Service</option>
+			<option value="volunteer">Volunteer</option>
+		</select>
+		<button type="button" onclick="redirectToLogin()">Login</button>
+	</form>
+
+	<script>
+		function redirectToLogin() {
+			var loginType = document.getElementById("loginType").value;
+			if (loginType == "") {
+				alert("Please select a login type.");
+			} else {
+				switch (loginType) {
+					case "serviceSeeker":
+						window.location.href = "serviceSeekerlogin.html";
+						break;
+					case "customerService":
+						window.location.href = "communityservicelogin.html";
+						break;
+					case "volunteer":
+						window.location.href = "volunteerlogin.html";
+						break;
+				}
+			}
+		}
+	</script>
+</body>
+</html>

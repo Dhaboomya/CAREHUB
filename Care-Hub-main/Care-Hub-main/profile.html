@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>profile page</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="frontpage.css">
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navbar-left">
+			<a href="frontpage.html" class="logo"><img src="images/logo.png"></a>
+			<div class="search-box">
+				<img src="images/searchlogo.png">
+				<input type="text" placeholder="search">
+			</div>
+		</div>
+		<div class="navbar-center">
+			<ul >
+				<li><a href="#" class="active-link"><img src="images/homelogo.png" > <span>Home</span></a></li>
+				<li><a href="#"><img src="images/mynetworklogo.jpeg" > <span>My Network</span></a></li>
+				<li><a href="#"><img src="images/messagelogo.png"> <span>Messaging</span></a></li>
+				<li><a href="#"><img src="images/notificationlogo.png"> <span>Notifications</span></a></li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+			<div class="online">
+			<img src="images/photo.jpeg" class="nav-profile-img" onclick="toggleMenu()">
+			</div>
+		</div>
+<!------------------profile-drop-down-menu-------------- -->
+<div class="profile-menu-wrap" id="profileMenu">
+	<div class="profile-menu">
+		<div class="user-info">
+			<img src="images/img2.jpeg">
+				<div>
+					<h3>Raya Walton</h3>
+						<a href="profile.html">See your profile</a>
+						</div>
+						</div>
+						<hr>
+						<a href="#" class="profile-menu-link">
+							<img src="images/feedback.logo.png">
+							<p>Give Feedback</p>
+							<span>></span>
+						</a>
+						<a href="#" class="profile-menu-link">
+							<img src="images/setting.png">
+						<p>Settings & privacy</p>
+						<span>></span>
+					</a>
+					<a href="#" class="profile-menu-link">
+						<img src="images/help.png">
+						<p>Help & Support</p>
+						<span>></span>
+					</a>
+					<a href="#" class="profile-menu-link">
+						<img src="images/display.png">
+						<p>Display & Accessibility</p>
+						<span>></span>
+					</a>
+					<a href="#" class="profile-menu-link">
+						<img src="images/logout.png">
+						<p>Logout</p>
+						<span>></span>
+					</a>
+				</div>
+</div>
+
+	</nav>
+	<!-- -----------navbar close-------------- -->
+    <div  class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+            <img src="images/img2.jpeg"  width="100%">
+            <div class="profile-container-inner">
+                <img src="images/photo.jpeg"  class="profile-pic">
+                <h1>Raya</h1>
+                <b>Social worker</b>
+                <p>United states &middot; <a href="#">Contact info</a></p>
+                <div class="mutual-connection">
+                    <img src="images/person2.jpeg">
+                    <span>1 mutual connection: Orlando</span>
+                </div>
+                <div class="profile-btn">
+                    <a href="#" class="primary-btn"><img src="images/connect.png">Connect</a>
+                    <a href="#"><img src="images/messagelogo.png">Message</a>
+                </div>
+            </div>
+            </div>
+			<div class="profile-description">
+				<h2>About</h2>
+				<p>Add description</p>
+				<a href="#"class="see-more-link">See more...</a>
+			</div>
+			<div class="profile-description">
+				<h2>Experience</h2>
+				<div class="profile-description-row">
+					<img src="images/blood.png">
+					<div>
+						<h3>Blood Donator</h3>
+						<b>Blood Donation Camp &middot; Seshwa</b>
+						<b>Feb 2021 &middot; B+ group</b>
+						<p>Donate blood and save lives!</p>
+					<hr>
+					</div>
+				</div>
+				<div class="profile-description-row">
+					<img src="images/tree.png">
+					<div>
+						<h3>Tree Plantation</h3>
+						<b>Reforestation &middot; Tree Plantation Campgain</b>
+						<b>Jun 2022 &middot; Roadside</b>
+						<p>Plant a green tree and live younger!</p>
+					</div>
+				</div>
+			<hr>
+			<a href="#" class="experience-link">Show all 5 experiences<img src="images/right arrow.png"  ></a>
+        </div>
+        <div class="profile-description">
+			<h2>Volunteering activities</h2>
+			<div class="profile-description-row">
+			<img src="images/volunteer.png">
+			<div>
+				<h3> Social service Oraganization</h3>
+				<b>Public education, welfare, infrastructure,Public Transportation</b>
+				<hr>
+			</div>
+			</div>
+		</div>
+		<div class="profile-description">
+			<h2>Skills</h2>
+			<a href="#" class="skills-btn">Leadership</a>
+			<a href="#" class="skills-btn">Team Work</a>
+			<a href="#" class="skills-btn">Social Involvement</a>
+			<a href="#" class="skills-btn">Event Coordinator</a>
+		</div>
+		<div class="profile-description">
+			<h2>Languages</h2>
+			<a href="#" class="language-btn">English</a>
+			<a href="#" class="language-btn">Tamile</a>
+			<a href="#" class="language-btn">Hindi</a>
+		</div>
+
+		</div>
+       <!-- ------------------profile-sidebar------------------>
+        <div class="profile-sidebar">
+           <div class="sidebar-people">
+			<h3>People you may know</h3>
+			<div class="sidebar-people-row">
+				<img src="images/girl.png">
+				<div>
+					<h2>Olivia Tony</h2>
+					<p>Head of TeamCube in Social Work</p>
+					<a href="#">Connect</a>
+				</div>
+			</div>
+			<div class="sidebar-people-row">
+				<img src="images/men.png">
+				<div>
+					<h2>John Dale</h2>
+					<p> Administrator and Manager in Care Connect</p>
+					<a href="#">Connect</a>
+				</div>
+			</div>
+			<div class="sidebar-people-row">
+				<img src="images/me.png">
+				<div>
+					<h2>Henley</h2>
+					<p>Worker in A.D Serice Network</p>
+					<a href="#">Connect</a>
+		        </div>
+		   </div>
+		    <div class="sidebar-people-row">
+			    <img src="images/girl3.png">
+			    <div>
+				    <h2>Sophia</h2>
+				    <p>Community Organizerk</p>
+				    <a href="#">Connect</a>
+	        </div>
+        </div>
+	        <div class="sidebar-people-row">
+		        <img src="images/girl5.png">
+		        <div>
+		         	<h2>Charlotte</h2>
+			        <p>Counselor and case manager</p>
+			        <a href="#">Connect</a>
+				</div>
+			</div>
+		</div>
+		
+		</div>
+		</div>
+		<div class="profile-footer">
+			<div class="sidebar-useful-links">
+				<a href="#">About</a>
+				<a href="#">Accessibility</a>
+				<a href="#">Help center</a>
+				<a href="#">Privacy policy</a>
+				<a href="#">More</a>
+
+				<div class="copyright-msg">
+					<img src="images/logo.png">
+					<p>Carehub &#169; 2022. All right reversed</p>
+				</div>
+			</div>
+			</div>
+		
+			
+
+
+
+    <script>
+		let profileMenu = document.getElementById("profileMenu");
+		function toggleMenu(){
+			profileMenu.classList.toggle("open-menu");
+		}
+	</script>
+</body>
+</html>
